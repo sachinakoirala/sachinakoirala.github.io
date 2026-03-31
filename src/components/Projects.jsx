@@ -55,6 +55,24 @@ export default function Projects() {
     return () => observer.disconnect();
   }, []);
 
+  const handleEnter = (e) => {
+    e.currentTarget.style.borderColor = "rgba(0,212,255,0.5)";
+    e.currentTarget.style.transform = "translateY(-4px)";
+    e.currentTarget.style.boxShadow = "0 8px 30px rgba(0,212,255,0.08)";
+  };
+
+  const handleLeave = (e) => {
+    e.currentTarget.style.borderColor = "rgba(200,169,110,0.15)";
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "none";
+  };
+
+  const handleLeaveSmall = (e) => {
+    e.currentTarget.style.borderColor = "rgba(200,169,110,0.1)";
+    e.currentTarget.style.transform = "translateY(0)";
+    e.currentTarget.style.boxShadow = "none";
+  };
+
   return (
     <section id="projects" ref={ref} style={{ padding: "7rem 2rem", background: "var(--surface)", borderTop: "1px solid rgba(200,169,110,0.08)", borderBottom: "1px solid rgba(200,169,110,0.08)" }}>
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
@@ -67,9 +85,16 @@ export default function Projects() {
           Things I've Built
         </h2>
 
+        {/* Featured projects */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.5rem", marginBottom: "1.5rem" }} className="projects-featured">
           {projects.filter((p) => p.featured).map((project, i) => (
-            <div key={i} className="reveal card-hover" style={{ border: "1px solid rgba(200,169,110,0.15)", borderRadius: "4px", padding: "2rem", background: "var(--dark)", position: "relative", overflow: "hidden" }}>
+            <div
+              key={i}
+              className="reveal"
+              onMouseEnter={handleEnter}
+              onMouseLeave={handleLeave}
+              style={{ border: "1px solid rgba(200,169,110,0.15)", borderRadius: "4px", padding: "2rem", background: "var(--dark)", position: "relative", overflow: "hidden", transition: "all 0.3s ease" }}
+            >
               <div style={{ position: "absolute", top: 0, right: 0, width: "120px", height: "120px", background: "radial-gradient(circle, rgba(200,169,110,0.06) 0%, transparent 70%)", pointerEvents: "none" }} />
 
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "1.25rem" }}>
@@ -97,9 +122,16 @@ export default function Projects() {
           ))}
         </div>
 
+        {/* Other projects */}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "1.5rem" }} className="projects-other">
           {projects.filter((p) => !p.featured).map((project, i) => (
-            <div key={i} className="reveal card-hover" style={{ border: "1px solid rgba(200,169,110,0.1)", borderRadius: "4px", padding: "1.5rem", background: "var(--dark)" }}>
+            <div
+              key={i}
+              className="reveal"
+              onMouseEnter={handleEnter}
+              onMouseLeave={handleLeaveSmall}
+              style={{ border: "1px solid rgba(200,169,110,0.1)", borderRadius: "4px", padding: "1.5rem", background: "var(--dark)", transition: "all 0.3s ease" }}
+            >
               <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "2rem", fontWeight: 900, color: "rgba(200,169,110,0.1)", lineHeight: 1, display: "block", marginBottom: "1rem" }}>{project.number}</span>
               <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", fontWeight: 700, marginBottom: "0.75rem", lineHeight: 1.35 }}>{project.title}</h3>
               <p style={{ fontSize: "0.83rem", color: "rgba(245,240,232,0.55)", lineHeight: 1.7, marginBottom: "1.25rem" }}>{project.description}</p>
