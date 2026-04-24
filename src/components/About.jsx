@@ -33,7 +33,7 @@ export default function About() {
             <span className="gold-text">Problem Solver.</span>
           </h2>
           <p className="reveal" style={{ color: "rgba(245,240,232,0.65)", lineHeight: 1.9, fontSize: "1rem", marginBottom: "1.25rem" }}>
-            I'm a graduate student at the University of Missouri–St. Louis pursuing my MS in Computer Science with a Graduate Certificate in AI & Data Science. I thrive at the intersection of machine learning, backend systems, and data engineering.
+            I'm a graduate student at the University of Missouri-St. Louis pursuing my MS in Computer Science with a Graduate Certificate in AI & Data Science. I thrive at the intersection of machine learning, backend systems, and data engineering.
           </p>
           <p className="reveal" style={{ color: "rgba(245,240,232,0.65)", lineHeight: 1.9, fontSize: "1rem", marginBottom: "2rem" }}>
             From building IoT sensor platforms on Raspberry Pi to teaching Python to undergrads, I bring both depth and breadth to every challenge. Previously I've worked in database administration and data science at tech companies in Nepal.
@@ -41,7 +41,7 @@ export default function About() {
           <div className="reveal">
             <div style={{ border: "1px solid rgba(200,169,110,0.2)", borderRadius: "4px", padding: "1.25rem 1.5rem", background: "rgba(200,169,110,0.04)" }}>
               <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", fontStyle: "italic", color: "var(--accent-light)", lineHeight: 1.7 }}>
-                "Turning complex data into meaningful, real-world solutions — one model at a time."
+                "Turning complex data into meaningful, real-world solutions - one model at a time."
               </p>
             </div>
           </div>

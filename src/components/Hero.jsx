@@ -139,7 +139,7 @@ export default function Hero() {
         </div>
 
         <p className="animate-fade-up opacity-0" style={{ animationDelay: "0.55s", animationFillMode: "forwards", maxWidth: "520px", marginTop: "2rem", lineHeight: 1.9, color: "rgba(232,237,245,0.6)", fontSize: "1rem" }}>
-          Graduate researcher & teaching assistant at UMSL building intelligent systems — from IoT platforms to machine learning models. Passionate about turning data into real-world impact.
+          Graduate researcher & teaching assistant at University of Missouri-Saint.Louis - from IoT platforms to machine learning models. Passionate about turning data into real-world impact.
         </p>
 
         <div className="animate-fade-up opacity-0" style={{ animationDelay: "0.7s", animationFillMode: "forwards", display: "flex", gap: "1rem", marginTop: "2.5rem", flexWrap: "wrap" }}>
