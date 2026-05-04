@@ -13,9 +13,9 @@ export default function About() {
   }, []);
 
   const stats = [
-    { value: "3.8", label: "GPA" },
-    { value: "4+", label: "Years Experience" },
-    { value: "5+", label: "Projects Built" },
+    { value: "3.9", label: "GPA" },
+    { value: "3+", label: "Years Experience" },
+    { value: "10+", label: "Projects Built" },
     { value: "2", label: "Research Roles" },
   ];
 
@@ -60,7 +60,7 @@ export default function About() {
           <div className="reveal" style={{ border: "1px solid rgba(200,169,110,0.15)", borderRadius: "4px", padding: "1.5rem", background: "var(--surface)" }}>
             <p style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.65rem", letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--accent)", marginBottom: "1rem" }}>Education</p>
             <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.05rem", fontWeight: 600, marginBottom: "0.25rem" }}>University of Missouri–St. Louis</p>
-            <p style={{ fontSize: "0.85rem", color: "rgba(245,240,232,0.6)", marginBottom: "0.25rem" }}>MS in Computer Science · GPA 3.8/4.0</p>
+            <p style={{ fontSize: "0.85rem", color: "rgba(245,240,232,0.6)", marginBottom: "0.25rem" }}>MS in Computer Science · GPA 3.9/4.0</p>
             <p style={{ fontSize: "0.85rem", color: "rgba(245,240,232,0.6)", marginBottom: "1rem" }}>Graduate Certificate in AI & Data Science</p>
             <p style={{ fontFamily: "'DM Mono', monospace", fontSize: "0.65rem", color: "var(--accent)", letterSpacing: "0.1em" }}>Sep 2024 – May 2026</p>
           </div>

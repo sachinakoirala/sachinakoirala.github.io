@@ -17,7 +17,7 @@ const certifications = [
     type: "Participation",
     typeColor: "rgba(0, 212, 255, 0.9)",
     icon: "🎯",
-    image: "/certificates/IMG_5138.jpeg",
+    image: "/certificates/Participant.jpg",
   },
   {
     title: "Workshop Certification",
@@ -29,13 +29,13 @@ const certifications = [
     image: "/certificates/workshop.png",
   },
   {
-    title: "Graduate Certificate in AI",
+    title: "Graduate Certificate in Artificial Intelligence",
     event: "Artificial Intelligence",
     issuer: "University of Missouri–St. Louis",
     type: "Academic",
     typeColor: "rgba(160, 150, 200, 0.9)",
     icon: "🤖",
-    image: null,
+    image: "/certificates/dumy.png",
   },
   {
     title: "Graduate Certificate in Data Science",
@@ -44,16 +44,16 @@ const certifications = [
     type: "Academic",
     typeColor: "rgba(160, 150, 200, 0.9)",
     icon: "📊",
-    image: null,
+    image: "/certificates/dumy.png",
   },
   {
-    title: "Organizer",
-    event: "Asian Hack",
+    title: "Organizer and Graphics Designer",
+    event: "Asian Hack 2022",
     issuer: "Asian School of Management & Technology",
     type: "Organizer",
     typeColor: "rgba(255, 150, 100, 0.9)",
     icon: "⚡",
-    image: null,
+    image: "/certificates/Hackathon.jpg",
   },
 
 ];
