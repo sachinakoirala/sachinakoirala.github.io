@@ -35,7 +35,7 @@ const certifications = [
     type: "Academic",
     typeColor: "rgba(160, 150, 200, 0.9)",
     icon: "🤖",
-    image: "/certificates/dumy.png",
+    image: "/certificates/ai-cert.jpg",
   },
   {
     title: "Graduate Certificate in Data Science",
@@ -44,7 +44,7 @@ const certifications = [
     type: "Academic",
     typeColor: "rgba(160, 150, 200, 0.9)",
     icon: "📊",
-    image: "/certificates/dumy.png",
+    image: "/certificates/ds-cert.jpg",
   },
   {
     title: "Organizer and Graphics Designer",
